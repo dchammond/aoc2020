@@ -15,8 +15,7 @@ fn main() {
         let x = nums[i];
         for num in &nums[0..i] {
             if num + x == 2020 {
-                println!("{} + {} == 2020", num, x);
-                println!("{}", num*x);
+                println!("{} + {} == 2020, {} * {} == {}", num, x, num, x, num*x);
                 break 'outer;
             }
         }
@@ -26,8 +25,7 @@ fn main() {
         let y = nums[i - 1];
         for num in &nums[0..i-1] {
             if num + x + y == 2020 {
-                println!("{} + {} + {} == 2020", num, x, y);
-                println!("{}", num*x*y);
+                println!("{} + {} + {} == 2020, {} * {} * {} == {}", num, x, y, num, x, y, num*x*y);
                 return;
             }
         }
